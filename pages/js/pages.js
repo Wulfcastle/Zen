@@ -4,8 +4,8 @@
 
     var Pages = function() {
         this.VERSION = "2.0.0";
-        this.AUTHOR = "Revox";
-        this.SUPPORT = "support@revox.io";
+        this.AUTHOR = "Wulfcastle";
+        this.SUPPORT = "support@wulf.io";
 
         this.pageScrollElement = 'html, body';
         this.$body = $('body');
