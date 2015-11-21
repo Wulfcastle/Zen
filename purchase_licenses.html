@@ -659,7 +659,21 @@
               <button class="btn btn-white">XBOX One</button>
               <button class="btn btn-white">PC (Linux)</button>
               <br>
-              <a href="payment.html"><button class="btn btn-primary buy-now">Buy Now</button></a>
+                <div style="padding:10px;">
+              <form action="/charge" method="POST">
+  <script
+    src="https://checkout.stripe.com/checkout.js"
+    class="stripe-button"
+    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+    data-name="Pegasi"
+    data-image="http://i.imgur.com/v4stH4G.png" 
+    data-bitcoin="true" 
+    data-amount=“65”
+    data-currency="USD"
+    data-description=Purchase of License”
+    >
+  </script>
+</form></div>
             </div>
           </div>
           <div class="row dialog__footer bg-info-dark hidden-xs">
@@ -811,6 +825,28 @@
       </div>
       <!-- END Overlay Content !-->
     </div>
+    
+    
+          <div class="modal fade fill-in" id="stripe_payment" tabindex="-1" role="dialog" aria-hidden="true">
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+         <i class="pg-close"></i>
+         </button>
+         <div class="modal-dialog ">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="text-left p-b-5"><span class="semi-bold">Make a Payment</span></h5>
+               </div> <br>
+               <div class="modal-body">
+                  <div class="row">
+                     
+                  </div>
+               </div>
+            </div>
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dialog -->
+      </div>
+    
     <!-- END OVERLAY -->
     <!-- BEGIN VENDOR JS -->
     <script src="assets/plugins/pace/pace.min.js" type="text/javascript"></script>
