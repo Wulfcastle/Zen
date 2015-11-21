@@ -11307,7 +11307,7 @@ Main components
   border-width: 0;
 }
 .b-r {
-  border-right-width: 1px;
+  border-right-width: 0px;
 }
 .b-l {
   border-left-width: 1px;
