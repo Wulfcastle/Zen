@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
-    <title>Pages - Admin Dashboard UI Kit</title>
+    <title>Pages - Landing</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="apple-touch-icon" href="pages/ico/60.png">
     <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
@@ -50,45 +50,29 @@
         </div>
       </div>
       <!-- END SIDEBAR HEADER -->
-      <!-- BEGIN SIDEBAR MENU -->
-      <div class="sidebar-menu">
+      <!-- START SIDEBAR MENU -->
+          <div class="sidebar-menu">
+        <!-- BEGIN SIDEBAR MENU ITEMS-->
         <ul class="menu-items">
-          <li class="m-t-30">
-            <a href="#" class="detailed">
-              <span class="title">Page 1</span>
-              <span class="details">234 notifications</span>
+          <li class="m-t-30 active open">
+            <a href="index.html" class="detailed">
+              <span class="title">Landing</span>
             </a>
-            <span class="icon-thumbnail "><i class="pg-mail"></i>
-                    </span>
+            <span class="icon-thumbnail bg-success"><i class="fa fa-circle-o"></i></span>
           </li>
           <li class="">
-            <a href="#">
-              <span class="title">Page 2</span>
-            </a>
-            <span class="icon-thumbnail "><i class="pg-social"></i>
-                    </span>
+            <a href="your_licenses.html" class="detailed"><span class="title">Your Licenses</span></a>
+            <span class="icon-thumbnail "><i class="fa fa-bookmark-o"></i></span>
           </li>
           <li class="">
-            <a href="javascript:;">
-              <span class="title">Page 3</span>
-              <span class=" arrow"></span>
+            <a href="purchase_licenses.html"><span class="title">Buy Licenses</span></a>
+            <span class="icon-thumbnail"><i class="fa fa-tags"></i></span>
+          </li>
+          <li class="">
+            <a href="builder.html">
+              <span class="title">Account</span>
             </a>
-            <span class="icon-thumbnail"><i class="pg-grid"></i>
-                    </span>
-            <ul class="sub-menu">
-              <li class="">
-                <a href="#">Sub Page 1</a>
-                <span class="icon-thumbnail">sp</span>
-              </li>
-              <li class="">
-                <a href="#">Sub Page 2</a>
-                <span class="icon-thumbnail">sp</span>
-              </li>
-              <li class="">
-                <a href="#">Sub Page 3</a>
-                <span class="icon-thumbnail">sp</span>
-              </li>
-            </ul>
+            <span class="icon-thumbnail"><i class="fa fa-cogs"></i></span>
           </li>
         </ul>
         <div class="clearfix"></div>
@@ -128,67 +112,31 @@
             <div class="brand inline">
               <img src="assets/img/logo.png" alt="logo" data-src="assets/img/logo.png" data-src-retina="assets/img/logo_2x.png" width="auto" height="auto">
             </div>
-            <!-- BEGIN NOTIFICATION DROPDOWN -->
-            <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
-              <li class="p-r-15 inline">
-                <div class="dropdown">
-                  <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">
-                    <span class="bubble"></span>
-                  </a>
-                  <div class="dropdown-menu notification-toggle" role="menu" aria-labelledby="notification-center">
-                    <div class="notification-panel">
-                      <!-- START Notification Body-->
-                      <div class="notification-body scrollable">
-                        <!-- START Notification Item-->
-                        <div class="notification-item  clearfix">
-                          <div class="heading">
-                            <a href="#" class="text-danger">
-                              <i class="fa fa-exclamation-triangle m-r-10"></i>
-                              <span class="bold">98% Server Load</span>
-                              <span class="fs-12 m-l-10">Take Action</span>
-                            </a>
-                            <span class="pull-right time">
-                                                        2 mins ago
-                                                    </span>
-                          </div>
-                          <div class="option">
-                            <a href="#" class="mark"></a>
-                          </div>
-                        </div>
-                        <!-- END Notification Item-->
-                      </div>
-                      <!-- END Notification Body-->
-                      <!-- START Notification Footer-->
-                      <div class="notification-footer text-center">
-                        <a href="#" class="">Read all notifications</a>
-                        <a data-toggle="refresh" class="portlet-refresh text-black pull-right" href="#">
-                          <i class="pg-refresh_new"></i>
-                        </a>
-                      </div>
-                      <!-- END Notification Footer-->
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="p-r-15 inline">
-                <a href="#" class="icon-set clip "></a>
-              </li>
-              <li class="p-r-15 inline">
-                <a href="#" class="icon-set grid-box"></a>
-              </li>
-            </ul>
-            <!-- END NOTIFICATION DROPDOWN -->
+            
           </div>
         </div>
         <div class=" pull-right">
           <!-- START User Info-->
           <div class="visible-lg visible-md m-t-10">
             <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
-              <span class="semi-bold">David</span>
-              <span class="text-master">Nest</span>
+              <span class="semi-bold">David</span> <span class="text-master">Nest</span>
             </div>
-            <div class="thumbnail-wrapper d32 circular inline m-t-5">
-              <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+            <div class="dropdown pull-right">
+              <button class="profile-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="thumbnail-wrapper d32 circular inline m-t-5">
+                <img src="assets/img/profiles/avatar.jpg" alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+            </span>
+              </button>
+              <ul class="dropdown-menu profile-dropdown" role="menu">
+                <li><a href="login.html"><i class="pg-settings_small"></i> Settings</a>
+                </li>
+                <li class="bg-master-lighter">
+                  <a href="login.html" class="clearfix">
+                    <span class="pull-left">Logout</span>
+                    <span class="pull-right"><i class="pg-power"></i></span>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <!-- END User Info-->
